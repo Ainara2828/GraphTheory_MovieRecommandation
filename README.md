@@ -1,2 +1,61 @@
 # GraphTheory_MovieRecommandation
+
 Score attribution for a couple (user,movie) using graph theory with R
+
+# Objective
+
+The goal of the project is to predict a rating for a couple (user, movie) based on the ratings assigned by their respective local communities (defined below in "graph theory" section).
+
+This project allows you to train on:
+- the recommendation
+- the R language
+- graph theory
+
+# Graph Theory 
+
+Abstractly, a graph is the data of a certain number of points on the plane, called nodes or vertices, some of which are connected by segments of lines or curves called edges. The number of vertices in the graph is its order. If we name X the set of vertices and U the set of edges, a graph G can be written G = (X, U).
+
+A community is defined in relation to a current graph as a group of nodes which are particularly linked to each other and weakly linked to the rest of the network. It may be, for example, individuals who exchange a lot with each other and little with others. In the world, this materializes in social networks: the friends of the same circle all know each other, but there is a big separation between two different circles.
+
+# Dataset
+
+The dataset comes from MovieLens site collected by the GroupLens research project at the University of Minnesota.
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/CSV%20head.png?raw=true)
+
+This dataset is composed of 3 columns :
+- UserId : one number id for each user
+- MovieId : one number id for each movie
+- Ratings : the rating (up to 5) given by a user to a movie
+
+# Project realisation
+
+First, we have to transform the csv to a graph. Users and movies are represented by nodes. If a user have seen a movie, the two nodes are linked by edges. The weight of that edge is the rating given by that user to that movie.
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true)
+
+Then, we have to transform this graph to a bipartite graph. A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets U and V such that every edge connects a vertex in U to one in V.
+
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi.PNG?raw=true)
+
+In our case, here is the transformation of our graph :
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi_.PNG?raw=true)
+
+The blue vertices are the movies and the red ones are the users, linked by edges.
+
+We have then to project this bipartite graph to detect the local communities of each group of nodes. Biparty graph projection is a widely used method of "compressing" the information contained in the graph. We also note that the projection artificially increases the clustering coefficient of the projected graph.
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/projection_ex.PNG?raw=true)
+
+Here is the user graph projection :
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_users.png?raw=true)
+
+And the movie graph projection :
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_films.PNG?raw=true)
+
+
+
