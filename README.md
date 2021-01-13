@@ -4,7 +4,7 @@ Score attribution for a couple (user,movie) using graph theory with R
 
 # Objective
 
-The goal of the project is to predict a rating for a couple (user, movie) based on the ratings assigned by their respective local communities (defined below in "graph theory" section).
+The goal of the project is to predict a rating for a couple (user, movie) based on the ratings assigned by their respective local communities (defined below in "project realisation" section).
 
 This project allows you to train on:
 - the recommendation
@@ -14,8 +14,6 @@ This project allows you to train on:
 # Graph Theory 
 
 Abstractly, a graph is the data of a certain number of points on the plane, called nodes or vertices, some of which are connected by segments of lines or curves called edges. The number of vertices in the graph is its order. If we name X the set of vertices and U the set of edges, a graph G can be written G = (X, U).
-
-A community is defined in relation to a current graph as a group of nodes which are particularly linked to each other and weakly linked to the rest of the network. It may be, for example, individuals who exchange a lot with each other and little with others. In the world, this materializes in social networks: the friends of the same circle all know each other, but there is a big separation between two different circles.
 
 # Dataset
 
@@ -57,5 +55,19 @@ And the movie graph projection :
 
 ![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_films.PNG?raw=true)
 
+To predict those ratings for each couple (user, movie), we are going to find their respective local community. A community is defined in relation to a current graph as a group of nodes which are particularly linked to each other and weakly linked to the rest of the network. It may be, for example, individuals who exchange a lot with each other and little with others. In the world, this materializes in social networks: the friends of the same circle all know each other, but there is a big separation between two different circles.
 
+To detect the community, we will use the L modularity. 
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/modularity.png?raw=true)
+
+To illustrate the algorithm, we will take an example of a local community. Here node C represents our local community, node B its border and S the edges of our community, that is to say the neighborhood of B.
+
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/local_com.png?raw=true)
+
+On each iteration, the algorithm takes a point in U space and adds it to the community. Then it calculates the new modularity. If this is greater than the old one, then the node is added to the community.
+There are two stopping conditions for this algorithm, either there is no new point allowing an improvement of the modularity at the end of a large number of iterations, or the whole of the graph has been traversed and there are no more points (vertex) to add to the community.
+
+Once the community is found, we retrieve all the weights (ratings) of the links from this community and get an average rating which will be the predicted rating from this community.
 
