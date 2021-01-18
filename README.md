@@ -30,7 +30,7 @@ This dataset is composed of 3 columns :
 
 First, we have to transform the csv to a graph. Users and movies are represented by nodes. If a user have seen a movie, the two nodes are linked by edges. The weight of that edge is the rating given by that user to that movie.
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true" width="250" height="250">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true" width="350" height="350">
 
 
 
