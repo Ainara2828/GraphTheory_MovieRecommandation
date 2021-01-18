@@ -79,5 +79,7 @@ For the community of the movie, we keep the users that have seen more than 5 sam
 
 Here is the result :
 
-![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true =250x250)
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true" width="100" height="100">
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true)
 
