@@ -63,7 +63,7 @@ To predict those ratings for each couple (user, movie), we are going to find the
 
 To detect the community, we will use the L modularity. 
 
-![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/modularity.PNG?raw=true)
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/modularity.png?raw=true)
 
 To illustrate the algorithm, we will take an example of a local community. Here node C represents our local community, node B its border and S the edges of our community, that is to say the neighborhood of B.
 
