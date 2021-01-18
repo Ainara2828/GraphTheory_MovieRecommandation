@@ -35,12 +35,11 @@ First, we have to transform the csv to a graph. Users and movies are represented
 
 Then, we have to transform this graph to a bipartite graph. A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets U and V such that every edge connects a vertex in U to one in V.
 
-
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi.PNG?raw=true" width="250" height="250">
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi.PNG?raw=true)
 
 In our case, here is the transformation of our graph :
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi_.PNG?raw=true" width="250" height="250">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi_.PNG?raw=true" width="150" height="150">
 
 
 The blue vertices are the movies and the red ones are the users, linked by edges.
@@ -64,8 +63,7 @@ To predict those ratings for each couple (user, movie), we are going to find the
 
 To detect the community, we will use the L modularity. 
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/modularity.png?raw=true" width="50" height="250">
-
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/modularity.PNG?raw=true)
 
 To illustrate the algorithm, we will take an example of a local community. Here node C represents our local community, node B its border and S the edges of our community, that is to say the neighborhood of B.
 
