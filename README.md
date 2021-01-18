@@ -63,8 +63,8 @@ To detect the community, we will use the L modularity.
 
 To illustrate the algorithm, we will take an example of a local community. Here node C represents our local community, node B its border and S the edges of our community, that is to say the neighborhood of B.
 
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/local_com.png?raw=true" width="350" height="350">
 
-![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/local_com.png?raw=true)
 
 On each iteration, the algorithm takes a point in U space and adds it to the community. Then it calculates the new modularity. If this is greater than the old one, then the node is added to the community.
 There are two stopping conditions for this algorithm, either there is no new point allowing an improvement of the modularity at the end of a large number of iterations, or the whole of the graph has been traversed and there are no more points (vertex) to add to the community.
@@ -79,5 +79,6 @@ For the community of the movie, we keep the users that have seen more than 5 sam
 
 Here is the result :
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true" width="250" height="250">
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true)
 
