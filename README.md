@@ -30,7 +30,7 @@ This dataset is composed of 3 columns :
 
 First, we have to transform the csv to a graph. Users and movies are represented by nodes. If a user have seen a movie, the two nodes are linked by edges. The weight of that edge is the rating given by that user to that movie.
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true" width="350" height="350">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true" width="400" height="350">
 
 
 
@@ -47,17 +47,17 @@ The blue vertices are the movies and the red ones are the users, linked by edges
 
 We have then to project this bipartite graph to detect the local communities of each group of nodes. Biparty graph projection is a widely used method of "compressing" the information contained in the graph. We also note that the projection artificially increases the clustering coefficient of the projected graph.
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/projection_ex.PNG?raw=true" width="350" height="350">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/projection_ex.PNG?raw=true" width="400" height="350">
 
 
 Here is the user graph projection :
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_users.png?raw=true" width="350" height="350">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_users.png?raw=true" width="400" height="350">
 
 
 And the movie graph projection :
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_films.PNG?raw=true" width="350" height="350">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/proj_films.PNG?raw=true" width="400" height="350">
 
 
 To predict those ratings for each couple (user, movie), we are going to find their respective local community. A community is defined in relation to a current graph as a group of nodes which are particularly linked to each other and weakly linked to the rest of the network. It may be, for example, individuals who exchange a lot with each other and little with others. In the world, this materializes in social networks: the friends of the same circle all know each other, but there is a big separation between two different circles.
