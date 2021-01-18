@@ -71,3 +71,13 @@ There are two stopping conditions for this algorithm, either there is no new poi
 
 Once the community is found, we retrieve all the weights (ratings) of the links from this community and get an average rating which will be the predicted rating from this community.
 
+# Results
+
+For the recommandation part, we have 3 results : 3 ratings given, one by the community of the user described above, one by the community of the movie and the last one by the entire graph (that is to say all the user who have seen the movie selected and their ratings for that movie).
+
+For the community of the movie, we keep the users that have seen more than 5 same movies in common with the user entered, including the movie intered. Then we calculate the mean of the ratings given by that community for that movie.
+
+Here is the result :
+
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true)
+
