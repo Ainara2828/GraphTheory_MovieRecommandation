@@ -85,5 +85,5 @@ For the community of the movie, we keep the users that have seen more than 5 sam
 Here is the result :
 
 
-![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/resultat.PNG?raw=true)
+![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/result.PNG?raw=true)
 
