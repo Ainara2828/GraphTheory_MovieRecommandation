@@ -47,7 +47,7 @@ The blue vertices are the movies and the red ones are the users, linked by edges
 
 We have then to project this bipartite graph to detect the local communities of each group of nodes. Biparty graph projection is a widely used method of "compressing" the information contained in the graph. We also note that the projection artificially increases the clustering coefficient of the projected graph.
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/projection_ex.PNG?raw=true" width="400" height="350">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/projection_ex.PNG?raw=true" width="450" height="350">
 
 
 Here is the user graph projection :
