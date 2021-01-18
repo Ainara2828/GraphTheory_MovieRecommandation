@@ -30,7 +30,8 @@ This dataset is composed of 3 columns :
 
 First, we have to transform the csv to a graph. Users and movies are represented by nodes. If a user have seen a movie, the two nodes are linked by edges. The weight of that edge is the rating given by that user to that movie.
 
-![alt text](https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true)
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/GraphG.png?raw=true" width="250" height="250">
+
 
 
 Then, we have to transform this graph to a bipartite graph. A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets U and V such that every edge connects a vertex in U to one in V.
@@ -39,7 +40,7 @@ Then, we have to transform this graph to a bipartite graph. A bipartite graph (o
 
 In our case, here is the transformation of our graph :
 
-<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi_.PNG?raw=true" width="150" height="150">
+<img src="https://github.com/Ainara2828/GraphTheory_MovieRecommandation/blob/main/images/graph_bi_.PNG?raw=true" width="350" height="350">
 
 
 The blue vertices are the movies and the red ones are the users, linked by edges.
